@@ -1,0 +1,42 @@
+package javaPractice;
+
+import java.util.Scanner;
+
+class Fruit
+{
+    String name,taste;
+    int size;
+    public Fruit(String name,String taste,int size)
+    {
+        this.name=name;
+        this.taste=taste;
+        this.size=size;
+   }
+    public void eat(String name,String taste)
+    {
+        System.out.println("Name of Fruits : "+name);
+        System.out.println("Tast of FARUITS : "+taste);
+    }
+}
+class Apple extends Fruit
+{
+
+    public Apple(String name, String taste, int size) {
+        super(name, taste, size);
+    }
+}
+public class JavaInheriMain
+{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Ennter name of Fruits ");
+        String name=sc.nextLine();
+        System.out.println("Ente tast of fruits ");
+        String  tast=sc.nextLine();
+        System.out.println("Enter size of fruits ");
+        int size=sc.nextInt();
+        Apple obj=new Apple(name,tast,size);
+        obj.eat(name,tast);
+        System.out.println("Hey bro, I am working ");
+    }
+}
