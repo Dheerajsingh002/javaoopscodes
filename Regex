@@ -1,0 +1,15 @@
+package com.company;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class REgex {
+    public static void main(String[] args) {
+//        Pattern p=Pattern.compile("..s");
+//        Matcher m=p.matcher("aks");
+//          boolean a=m.matches();
+//       System.out.println(a);
+        boolean b=Pattern.compile("[789]//d{9}").matcher("74496579").matches();
+        System.out.println(b);
+    }
+}
