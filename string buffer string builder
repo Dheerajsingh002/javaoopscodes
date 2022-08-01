@@ -1,0 +1,52 @@
+package com.company;
+
+import java.util.Locale;
+
+public class Practice {
+    public static void main(String[] args) {
+       String s="abcdefgh";
+        String a="ABCDEFGH";
+        String b="Dheeraj";
+        String c="Gaurav";
+        String d="shiv";
+        String s2=a.toLowerCase();
+        String s1=s.toUpperCase();
+        System.out.println(s1);
+        System.out.println(s2);
+        System.out.println(b.startsWith("Dh"));
+        System.out.println(c.contains("ga"));
+        System.out.println(d.endsWith("iv"));
+        String s="Abc";
+        char c[]=s.toCharArray();
+        for (int i=0;i<c.length;i++){
+            System.out.print(c[i]);
+        }
+        System.out.println(s.toCharArray());
+        char c[]={'A','B','C'};
+        String  s=new String(c);
+        for (int i=0;i<s.length();i++){
+            System.out.print(c[i]);
+        }
+        System.out.println(c);
+        String s="Abcbcbdfgd";
+        System.out.println(s);
+        System.out.println(s.length());
+        String s1=s.substring(0,2);
+        String  s1=s.concat("efgh");
+       String s1=s.replace('b','x');
+      System.out.println(s1);
+      String s="Abcd";
+       String s1="Abcz";
+      String s = "He is a good boy";
+          String[] s1 = s.split("o");
+            for (int i=0;i<s1.length;i++){
+            System.out.println(s1[i]);
+        StringBuffer sb=new StringBuffer("Abc");
+        System.out.println(sb.append("def"));
+       System.out.println(sb.reverse());
+        System.out.println(sb.substring(0,2));
+        }
+
+
+    }
+
